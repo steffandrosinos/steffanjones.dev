@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body {
+  background: #0a0a0e;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+	font-size: 20px;
+	color: white;
+  
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+ color:#fff;
+ text-decoration:none
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+@-webkit-keyframes anim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes anim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes anim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes anim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+#main {
+  position: relative;
+  height: 100%;
+  width: 94%;
+  top: 10px;
+  left: 75px;
+  margin: -4px;
+}
+#seperator {
+  position: fixed;
+  z-index: -1;
+  width: 2px;
+  top: -10%;
+  height: 110%;
+  left: 62px;
+  //background: linear-gradient(0deg, #80ffdb, #a600ff);
+  background-color: #404060;
+}
+#steffan {
+  width: 380px;
+  font-size: 80;
+  background: linear-gradient(135deg, #80ffdb, #a600ff);
+  background-size: 400% 100%;
+  -webkit-animation: anim 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-animation: anim 20s ease infinite;
+  -o-animation: anim 20s ease infinite;
+  animation: anim 20s ease infinite;
+}
+num {
+  position: relative;
+  left: -25px;
+  color: #404060;
+}
+.os_info{
+  height: 260px;
+  position: relative;
+  left: -25px;
+}
+cl {
+  color: #a600ff;
+}
+cy {
+  background: linear-gradient(135deg, #80ffdb, #a600ff);
+  background-size: 200% 100%;
+  -webkit-animation: anim 20s ease infinite;
+  -moz-animation: anim 20s ease infinite;
+  -o-animation: anim 20s ease infinite;
+  animation: anim 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+gr {
+  color: #666666;
+}
+#pos {
+  position: relative;
+  top: -50px;
+}
+#uptime {
+  position: relative;
+  height: 25px;
+  top: -24px;
+  left: 100px;
+}
+#terminal {
+  position: relative;
+  left: -24px;
+}
+dots {
+  color: #333333;
+  letter-spacing: 10px;
+}
+red {
+  color: #FF5555;
+}
+input[type=text] {
+  position: relative;
+  left: -1px;
+  border: none;
+  border-radius: 0px;
+  width: 50%;
+  height: 22px;
+  margin: 0px 0px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: normal;
+  text-align: left;
+  color: WHITE;
+  background-color: transparent;
+}
+#social {
+  position: relative;
+  top:4px;
+  width: 23px;
+  height: 23px;
+}
+social_dot {
+  position: relative;
+  color: #333333;
+  left: 5px;
+  letter-spacing: 10px;
+}
