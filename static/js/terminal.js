@@ -61,18 +61,22 @@ function cmd_socials() {
   
   addDots();
   
+  
   var html_linkedin = "<a href='https://www.linkedin.com/in/steffandrosinos/' target='_blank'><img id='social' src='https://steffanjones.dev/static/social/linkedin.png'><social_dot>·</social_dot>LinkedIn</a>";
   var html_github = "<a href='https://github.com/steffandrosinos' target='_blank'><img id='social' src='https://steffanjones.dev/static/social/github.png'><social_dot>·</social_dot>GitHub</a>";
-  var html_email1 = "<img id='social' src='https://steffanjones.dev/static/social/email.png'><social_dot>·</social_dot>steffan@SteffanJones.dev";
-  var html_email2 = "<img id='social' src='https://steffanjones.dev/static/social/email.png'><social_dot>·</social_dot>SteffanDrosinos@outlook.com";
+  var html_twitter = "<a href='https://twitter.com/steffandrosinos' target='_blank'><img id='social' src='https://steffanjones.dev/static/social/twitter.png'><social_dot>·</social_dot>@SteffanDrosinos</a>";
+  var html_email1 = "<img id='social' src='https://steffanjones.dev/static/social/email.png'><social_dot>·</social_dot>Main: steffan@SteffanJones.dev";
+  var html_email2 = "<img id='social' src='https://steffanjones.dev/static/social/email.png'><social_dot>·</social_dot>Secondary: SteffanDrosinos@outlook.com";
   var html1 = "<num>"+ current_number + "</num><dots>····</dots>" + html_linkedin + "<br>"; current_number++;
   var html2 = "<num>"+ current_number + "</num><dots>····</dots>" + html_github + "<br>"; current_number++;
-  var html3 = "<num>"+ current_number + "</num><dots>····</dots>" + html_email1 + "<br>"; current_number++;
-  var html4 = "<num>"+ current_number + "</num><dots>····</dots>" + html_email2 + "<br>"; current_number++;
+  var html3 = "<num>"+ current_number + "</num><dots>····</dots>" + html_twitter + "<br>"; current_number++;
+  var html4 = "<num>"+ current_number + "</num><dots>····</dots>" + html_email1 + "<br>"; current_number++;
+  var html5 = "<num>"+ current_number + "</num><dots>····</dots>" + html_email2 + "<br>"; current_number++;
   $("#terminal").append(html1);
   $("#terminal").append(html2);
   $("#terminal").append(html3);
   $("#terminal").append(html4);
+  $("#terminal").append(html5);
   
   addDots();
   past_commands.push("socials"); //add command to past commands
