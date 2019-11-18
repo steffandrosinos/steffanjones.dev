@@ -9,10 +9,10 @@ window.setInterval(function(){
   var uptime = getUptime();
   //I use MOD in order to get days + hours + minutes + seconds
   //instead of getting seconds since start time etc.
-  var seconds = Math.floor((uptime/1000)%60);
-  var minutes = Math.floor(((uptime/1000)/60)%60);
-  var hours = Math.floor((((uptime/1000)/60)/60)%24);
-  var days = Math.floor(((((uptime/1000)/60)/60)/24));
+  var seconds = Math.floor((uptime/1000)%60);       //ms/1000 = seconds
+  var minutes = Math.floor((uptime/(1000*60))%60);  //ms/1000*60 = minutes
+  var hours = Math.floor((uptime/(1000*60*60))%24); //ms/1000*60*60 = hours
+  var days = Math.floor((uptime/(1000*60*60))/24);
   var output = days.toString() + " Days, " + hours.toString() + " Hours, " + minutes.toString() + " Minutes, " + seconds.toString() + " Seconds";
   document.getElementById("uptime").innerHTML = output; //change inner html to output
 }, 1000); //1 sec interval
