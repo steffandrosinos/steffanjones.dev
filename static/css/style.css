@@ -82,7 +82,7 @@ num {
   color: #404060;
 }
 .os_info{
-  height: 260px;
+  height: 272px;
   position: relative;
   left: -25px;
 }
@@ -151,4 +151,102 @@ social_dot {
   color: #333333;
   left: 5px;
   letter-spacing: 10px;
+}
+
+/* Emails */
+#email1 {
+  position: relative;
+  line-height: 0px;
+  height: 0px;
+  left: 177px;
+  margin: -13 0;
+}
+#email1:hover {
+  color: #a600ff;
+  transition: opacity 0.3s;
+}
+#email1 #emailTip1 {
+  visibility: hidden;
+  width: 140px;
+  height: 2px;
+  background: linear-gradient(135deg, #80ffdb, #a600ff);
+  background-size: 200% 100%;
+  -webkit-animation: anim 20s ease infinite;
+  -moz-animation: anim 20s ease infinite;
+  -o-animation: anim 20s ease infinite;
+  animation: anim 20s ease infinite;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+  left: 30px;
+  top: -37px;
+  font-size: 16px;
+}
+#email1 #emailTip1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+#email1:hover #emailTip1 {
+  visibility: visible;
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 1;
+}
+
+
+#email2 {
+  position: relative;
+  line-height: 0px;
+  height: 0px;
+  left: 230px;
+  margin: -12 0;
+}
+#email2:hover {
+  color: #a600ff;
+  transition: opacity 0.3s;
+}
+#email2 #emailTip2 {
+  visibility: hidden;
+  width: 140px;
+  height: 2px;
+  background: linear-gradient(135deg, #80ffdb, #a600ff);
+  background-size: 200% 100%;
+  -webkit-animation: anim 20s ease infinite;
+  -moz-animation: anim 20s ease infinite;
+  -o-animation: anim 20s ease infinite;
+  animation: anim 20s ease infinite;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+  left: 53px;
+  top: -37px;
+  font-size: 16px;
+}
+#email2 #emailTip2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+#email2:hover #emailTip2 {
+  visibility: visible;
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 1;
 }

@@ -1,5 +1,5 @@
 $("#terminal_input").focus(); //Focus terminal input
-$("#terminal_input").val("");
+$("#terminal_input").val(""); //set its valuie to empty
 
 //Variables
 var current_number = 30;      //Column numbers, starts at 30, resets to 11
@@ -32,89 +32,109 @@ function addDots() {
   $("#terminal").append("<num>"+ current_number + "</num><dots>····</dots><br>");current_number++;
 }
 
+//Function that adds command response
+function addHtml(intputHtml) {
+  var html = "<num>"+ current_number + "</num><dots>····</dots>" + intputHtml + "<br>"; current_number++;
+  $("#terminal").append(html);
+}
+
+//Function that takes div as input and copies to clipboard whatever text is in that div
+function copyToClipboard(element) {
+ var $temp = $("<input>");
+ $("body").append($temp);
+ $temp.val($(element).html()).select();
+ document.execCommand("copy");
+ $temp.remove();
+}
+
 /*---------------------------------------------------------------*/
 //Commands
 function cmd_about() {
   
-  addDots();
-  
   var line1 = "My name is Steffan Drosinos Jones and I spend most of my free time on a computer."
   var line2 = "I love to create random websites, random software, play video games"
   
-  var html1 = "<num>"+ current_number + "</num><dots>····</dots>" + line1 + "<br>"; current_number++;
-  var html2 = "<num>"+ current_number + "</num><dots>····</dots>" + line2 + "<br>"; current_number++;
-  
-  $("#terminal").append(html1);
-  $("#terminal").append(html2);
+  addDots();
+  addHtml(line1);
+  addHtml(line2);
   addDots();
   
-  past_commands.push("about"); //add command to past commands
 }
 
 function cmd_projects() {
 
-  past_commands.push("projects"); //add command to past commands
 }
 
 function cmd_socials() {
-  console.log("test");
-  
-  addDots();
-  
-  
   var html_linkedin = "<a href='https://www.linkedin.com/in/steffandrosinos/' target='_blank'><img id='social' src='https://steffanjones.dev/static/social/linkedin.png'><social_dot>·</social_dot>LinkedIn</a>";
   var html_github = "<a href='https://github.com/steffandrosinos' target='_blank'><img id='social' src='https://steffanjones.dev/static/social/github.png'><social_dot>·</social_dot>GitHub</a>";
   var html_twitter = "<a href='https://twitter.com/steffandrosinos' target='_blank'><img id='social' src='https://steffanjones.dev/static/social/twitter.png'><social_dot>·</social_dot>@SteffanDrosinos</a>";
-  var html_email1 = "<img id='social' src='https://steffanjones.dev/static/social/email.png'><social_dot>·</social_dot>Main: steffan@SteffanJones.dev";
-  var html_email2 = "<img id='social' src='https://steffanjones.dev/static/social/email.png'><social_dot>·</social_dot>Secondary: SteffanDrosinos@outlook.com";
-  var html1 = "<num>"+ current_number + "</num><dots>····</dots>" + html_linkedin + "<br>"; current_number++;
-  var html2 = "<num>"+ current_number + "</num><dots>····</dots>" + html_github + "<br>"; current_number++;
-  var html3 = "<num>"+ current_number + "</num><dots>····</dots>" + html_twitter + "<br>"; current_number++;
-  var html4 = "<num>"+ current_number + "</num><dots>····</dots>" + html_email1 + "<br>"; current_number++;
-  var html5 = "<num>"+ current_number + "</num><dots>····</dots>" + html_email2 + "<br>"; current_number++;
-  $("#terminal").append(html1);
-  $("#terminal").append(html2);
-  $("#terminal").append(html3);
-  $("#terminal").append(html4);
-  $("#terminal").append(html5);
+  var html_email1 = "<img id='social' src='https://steffanjones.dev/static/social/email.png'><social_dot>·</social_dot>Main: <div id='email1'><div id='email1_val'>steffan@steffanjones.dev</div><span id='emailTip1'></span></div>";
+  var html_email2 = "<img id='social' src='https://steffanjones.dev/static/social/email.png'><social_dot>·</social_dot>Secondary: <div id='email2'><div id='email2_val'>SteffanDrosinos@outlook.com</div><span id='emailTip2'></span></div>";
   
   addDots();
-  past_commands.push("socials"); //add command to past commands
+  addHtml(html_linkedin);
+  addHtml(html_github);
+  addHtml(html_twitter);
+  addHtml(html_email1);
+  addHtml(html_email2);
+  addDots();
+  
+  //Email copying handling
+  //Email1
+  $('#email1').hover( //On hover function
+    function() {
+      $('#emailTip1').html("Copy to clipboard");
+    }
+  );
+  $('#email1').click( //Click function
+    function() {
+      copyToClipboard('#email1_val');
+      $('#emailTip1').html("Copied!");
+    }
+  );
+  
+  //Email2
+  $('#email2').hover( //On hover function
+    function() {
+      $('#emailTip2').html("Copy to clipboard");
+    }
+  );
+  $('#email2').click( //Click function
+    function() {
+      copyToClipboard('#email2_val');
+      $('#emailTip2').html("Copied!");
+    }
+  );
+  
 }
 
 function cmd_commands() {
+  var line_list = "<cy>List of commands:</cy>"
+  
   addDots();
-  $("#terminal").append("<num>"+ current_number + "</num><dots>····</dots>List of commands:<br>"); current_number++;
+  addHtml(line_list);
   var commands = getCommands();
   for(var i=0; i<commands.length; i++) {
-    $("#terminal").append("<num>"+ current_number + "</num><dots>······</dots><b>" + commands[i] + "</b><br>"); current_number++;
+    var line = "<dots>··</dots><b>" + commands[i] + "</b>";
+    addHtml(line);
   }
   addDots();
-  
-  past_commands.push("commands"); //add command to past commands
 }
 
 function cmd_help() {
-  
-  addDots();
   var line1 = "This is a command line interface made in basic JS and jQuery in order to display information about me.";
   var line2 = "You can type commands into the terminal. Type &quot;commands&quot; so you can see all available commands.";
   
-  var html1 = "<num>"+ current_number + "</num><dots>····</dots>" + line1 + "<br>"; current_number++;
-  var html2 = "<num>"+ current_number + "</num><dots>····</dots>" + line2 + "<br>"; current_number++;
-  
-  $("#terminal").append(html1);
-  $("#terminal").append(html2);
   addDots();
-  
-  past_commands.push("help"); //add command to past commands
+  addHtml(line1);
+  addHtml(line2);
+  addDots();
 }
 
 function cmd_clear() {
   $("#terminal").html(""); //Empty inner html
   current_number = 11;     //Reset column number to 11
-  
-  past_commands.push("clear"); //add command to past commands
 }
 /*---------------------------------------------------------------*/
 
@@ -141,10 +161,16 @@ $(document).keydown(function (e) {
       } else if(input == "help") {
         cmd_help();
       } else {
+        //Not a valid command
+        var line = "<red>" + input + "</red>: command not found";
         
-        past_commands.push(input); //add command to past commands
+        addDots();
+        addHtml(line);
+        addDots();
+        
       }
       
+      past_commands.push(input);
       addInputLine();
       
       break;
