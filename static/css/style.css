@@ -29,22 +29,18 @@ a:active {
 @-webkit-keyframes anim {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
 }
 @-moz-keyframes anim {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
 }
 @-o-keyframes anim {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
 }
 @keyframes anim {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
 }
 #main {
   position: relative;
@@ -53,6 +49,7 @@ a:active {
   top: 10px;
   left: 75px;
   margin: -4px;
+
 }
 #seperator {
   position: fixed;
@@ -79,6 +76,7 @@ a:active {
 num {
   position: relative;
   left: -25px;
+  top: 1px;
   color: #404060;
 }
 .os_info{
@@ -201,7 +199,6 @@ social_dot {
   font-weight: bold;
   opacity: 1;
 }
-
 
 #email2 {
   position: relative;

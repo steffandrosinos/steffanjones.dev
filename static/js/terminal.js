@@ -51,12 +51,24 @@ function copyToClipboard(element) {
 //Commands
 function cmd_about() {
   
-  var line1 = "My name is Steffan Drosinos Jones and I spend most of my free time on a computer."
-  var line2 = "I love to create random websites, random software, play video games"
+  var line1 = "My name is <cy>Steffan Drosinos Jones</cy> and I spend most of my free time on a computer."
+  var line2 = "I'm currently studying Computer Science at the <cy><a href='https://www.liverpool.ac.uk/study/undergraduate/courses/computer-science-bsc-hons/overview/' target='_blank'>University of Liverpool.</a></cy>";
+  var line3 = "I'll be looking for a job after I graduate in 2020. I'm looking for Computer Networking, programming or Cloud Engineering work.";
+  var line4 = "I love to create random websites, random software and play video games."
+  var line5 = "I've wanted to display my web development abilities for a while but never thought to create something like this."
+  var line6 = "From what I've seen from other portfolios, I think this cli is a creative way of expressing myself."
+  var line7 = "The idea behind this page is to showcase some information about me and showcase some of my projects."
+  var line8 = "I also have a non-cli version at <cy><a href='https://www.steffanjones.dev'/' target='_blank'>www.steffanjones.dev</a></cy> (not live yet!)."
   
   addDots();
   addHtml(line1);
   addHtml(line2);
+  addHtml(line3);
+  addHtml(line4);
+  addHtml(line5);
+  addHtml(line6);
+  addHtml(line7);
+  addHtml(line8);
   addDots();
   
 }
@@ -125,10 +137,12 @@ function cmd_commands() {
 function cmd_help() {
   var line1 = "This is a command line interface made in basic JS and jQuery in order to display information about me.";
   var line2 = "You can type commands into the terminal. Type &quot;commands&quot; so you can see all available commands.";
+  var line3 = "You can view past commands by using the up arrow and down arrow keys."
   
   addDots();
   addHtml(line1);
   addHtml(line2);
+  addHtml(line3);
   addDots();
 }
 
