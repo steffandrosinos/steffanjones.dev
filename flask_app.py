@@ -20,4 +20,4 @@ def index():
 # cli traffic
 @app.route('/', subdomain="cli")
 def cli():
-    return render_template("index.html")
+    return render_template("cli.html")
