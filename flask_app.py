@@ -15,7 +15,7 @@ def non_www_index():
 # www traffic
 @app.route('/', subdomain="www")
 def index():
-    return redirect("https://cli.steffanjones.dev", code=302)
+    return render_template("index.html")
 
 # cli traffic
 @app.route('/', subdomain="cli")

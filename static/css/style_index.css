@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+body {
+  background: #0a0a0a;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+	font-size: 20px;
+	color: white;
+}
+a:link, a:visited, a:hover, a:active {
+ color:#ffffff;
+ text-decoration:none
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+@-webkit-keyframes anim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+@-moz-keyframes anim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+@-o-keyframes anim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+@keyframes anim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+#main {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  left: 50%;
+  margin: 0 -500px;
+}
+#menu_top {
+  position: relative;
+  height: 65px;
+  top: 50px;
+}
+#logo {
+  position: relative;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  font-size: 45px;
+  background: linear-gradient(90deg, #80ffdb, #a600ff);
+  background-size: 200% 100%;
+  -webkit-animation: anim 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-animation: anim 20s ease infinite;
+  -o-animation: anim 20s ease infinite;
+  animation: anim 20s ease infinite;
+}
+#right_section {
+  position:relative;
+  font-size: 25px;
+  font-weight: bold;
+  top: -40px;
+  float: right;
+}
+#about {
+  position: relative;
+  top: 450px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+cy {
+  background: linear-gradient(135deg, #80ffdb, #a600ff);
+  background-size: 200% 100%;
+  -webkit-animation: anim 20s ease infinite;
+  -moz-animation: anim 20s ease infinite;
+  -o-animation: anim 20s ease infinite;
+  animation: anim 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
