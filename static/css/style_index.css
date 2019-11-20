@@ -53,6 +53,8 @@ a:link, a:visited, a:hover, a:active {
 }
 #logo {
   position: relative;
+  width: 372px;
+  height: 65px;
   font-weight: bolder;
   letter-spacing: 1.5px;
   font-size: 45px;
@@ -67,14 +69,35 @@ a:link, a:visited, a:hover, a:active {
 }
 #right_section {
   position:relative;
-  font-size: 25px;
-  font-weight: bold;
-  top: -40px;
+  height: 42px;
+  font-size: 30px;
+  top: -51.25px;
   float: right;
+  transition: .5s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sec {
+  padding: 3px;
+  width: 42px;
+  font-size: 20px;
+}
+i:hover {
+  background: linear-gradient(90deg, #80ffdb, #a600ff);
+  background-size: 200% 50%;
+  -webkit-animation: anim 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-animation: anim 5s ease infinite;
+  -o-animation: anim 5s ease infinite;
+  animation: anim 5s ease infinite;
+  transition: .5s ease;
 }
 #about {
   position: relative;
-  top: 450px;
+  margin: 50px 0px;
+  top: 400px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 50px;
   text-align: center;
@@ -88,4 +111,7 @@ cy {
   animation: anim 20s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#svg_github:hover {
+  filter: invert(17%) sepia(93%) saturate(3429%) hue-rotate(272deg) brightness(96%) contrast(141%);
 }
