@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 body {
   background: #0a0a0e;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100%;
   width: 100%;
   font-family: 'Muli', sans-serif;
@@ -47,12 +47,15 @@ a:link, a:visited, a:hover, a:active {
   margin: 0 -500px;
 }
 #menu_top {
-  position: relative;
+  position: fixed;
+  width: 100%;
   height: 65px;
   top: 50px;
+  z-index: 1;
 }
 #logo {
   position: relative;
+  left: 0;
   width: 372px;
   height: 65px;
   font-weight: bolder;
@@ -69,10 +72,11 @@ a:link, a:visited, a:hover, a:active {
 }
 #right_section {
   position:relative;
+  width: 200px;
   height: 42px;
   font-size: 30px;
   top: -51.25px;
-  float: right;
+  left: 800px;
   transition: .5s ease;
   display: flex;
   justify-content: space-between;
@@ -94,14 +98,6 @@ i:hover {
   animation: anim 5s ease infinite;
   transition: .5s ease;
 }
-#about {
-  position: relative;
-  margin: 50px 0px;
-  top: 400px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 50px;
-  text-align: center;
-}
 cy {
   background: linear-gradient(135deg, #80ffdb, #a600ff);
   background-size: 200% 100%;
@@ -112,6 +108,37 @@ cy {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#svg_github:hover {
-  filter: invert(17%) sepia(93%) saturate(3429%) hue-rotate(272deg) brightness(96%) contrast(141%);
+txt {
+  position: relative;
+  top: 30%;
+}
+#about {
+  position: relative;
+  top: 300px;
+  height: 450px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  filter: blur(0px);
+  transition: .5s ease;
+}
+#projects {
+  position: relative;
+  top: 300px;
+  height: 450px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  filter: blur(25px);
+  transition: .5s ease;
+}
+#contact {
+  position: relative;
+  top: 400px;
+  height: 675px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  filter: blur(25px);
+  transition: .5s ease;
 }
