@@ -134,9 +134,19 @@ txt {
   filter: blur(25px);
   transition: .5s ease;
 }
+#projects_lang {
+  position: relative;
+  top: 200px;
+  height: 450px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  filter: blur(25px);
+  transition: .5s ease;
+}
 #contact {
   position: relative;
-  top: 300px;
+  top: 100px;
   height: 675px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 50px;
@@ -184,4 +194,37 @@ txt {
   width: 100%;
   text-align: center;
   top: 925px;
+}
+@media only screen and (max-width: 1220px) {
+  #main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    margin: 0 -50%;
+  }
+  #logo {
+    position: relative;
+    top: -40px;
+    left: 50%;
+    width: 410px;
+    margin: -0px -205px;
+    font-size: 50px;
+  }
+  #right_section {
+    position:relative;
+    width: 275px;
+    height: 20px;
+    top: -10px;
+    left: 50%;
+    margin: -0px -137.5px;
+    transition: .5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #sec {
+    padding: 3px;
+    font-size: 28px;
+  }
 }

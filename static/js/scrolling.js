@@ -1,6 +1,6 @@
 //start
 var scroll_val = 0;
-var sections = ["about", "projects", "contact"];
+var sections = ["about", "projects", "projects_lang", "contact"];
 var section_pointer = 0;
 var scrolling = false;
 blurSections(section_pointer);

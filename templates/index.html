@@ -2,7 +2,7 @@
   <head>
     <title>&lt;steffan jones/&gt; Portfolio</title>
     <base href="https://steffanjones.dev/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="{{url_for("static", filename="favicon.png")}}">
     <link rel="stylesheet" type="text/css" href="{{url_for("static", filename="css/style_index.css")}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
     <script type="text/javascript" src="{{url_for("static", filename="js/jquery-3.4.1.min.js")}}"></script>
     <script type="text/javascript" src="{{url_for("static", filename="js/scrolling.js")}}"></script>
+  </body>
   </head>
   <body>
     <div id="main" class="noselect">
@@ -28,18 +29,19 @@
         </txt>
       </div>
       <div id="projects">
-        <txt>
-        These are a few of my projects. Some of which are quite small.
-        </txt><br>
+        <txt>These are a few of my projects. Most of these are quite small.</txt><br>
+      </div>
+      <div id="projects_lang">
+        <txt>Projects by programming language.</txt><br>
         <div id="languages">
-          <div id="lang"><i id="prog" class="devicon-java-plain"></i></div>
-          <div id="lang"><i id="prog" class="mdi mdi-language-python"></i></div>
-          <div id="lang_sml"><i id="prog" class="devicon-javascript-plain"></i></div>
-          <div id="lang_sml"><i id="prog" class="devicon-html5-plain"></i></div>
-          <div id="lang_sml"><i id="prog" class="devicon-css3-plain"></i></div>
-          <div id="lang_sml"><i id="prog" class="devicon-c-plain"></i></div>
-          <div id="lang_sml"><i id="prog" class="devicon-cplusplus-plain"></i></div>
-          <div id="lang"><i id="prog" class="mdi mdi-language-haskell"></i></div>
+          <div id="lang"><a href="https://github.com/steffandrosinos/Breaking-Caesar" target="_blank"><i id="prog" class="devicon-java-plain"></i></a></div>
+          <div id="lang"><i id="prog" class="mdi mdi-language-python"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="prog" class="devicon-javascript-plain"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="prog" class="devicon-html5-plain"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="prog" class="devicon-css3-plain"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/GameOfLife/blob/master/GameOfLife.c" target="_blank"><i id="prog" class="devicon-c-plain"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/Learning-CPP" target="_blank"><i id="prog" class="devicon-cplusplus-plain"></i></a></div>
+          <div id="lang"><a href="https://github.com/steffandrosinos/Learning-Haskell" target="_blank"><i id="prog" class="mdi mdi-language-haskell"></i></a></div>
         </div>
       </div>
       <div id="contact">
