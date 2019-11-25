@@ -1,10 +1,13 @@
 <html>
   <head>
-    <title>&lt;steffan jones/&gt;</title>
+    <title>&lt;steffan jones/&gt; Portfolio</title>
     <base href="https://steffanjones.dev/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" href="{{url_for("static", filename="favicon.png")}}">
     <link rel="stylesheet" type="text/css" href="{{url_for("static", filename="css/style_index.css")}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
     <script type="text/javascript" src="{{url_for("static", filename="js/jquery-3.4.1.min.js")}}"></script>
     <script type="text/javascript" src="{{url_for("static", filename="js/scrolling.js")}}"></script>
   </head>
@@ -13,26 +16,10 @@
       <div id="menu_top">
         <div id="logo">&lt;steffan jones/&gt;</div>
         <div id="right_section">
-          <div id="sec">
-            <a href="https://cli.steffanjones.dev">
-              <i class="fa fa-terminal fa-2x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div id="sec">
-            <a href="https://github.com/steffandrosinos" target="_blank">
-              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div id="sec">
-            <a href="https://www.linkedin.com/in/steffandrosinos/" target="_blank">
-              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div id="sec">
-            <a href="https://www.twitter.com/steffandrosinos" target="_blank">
-              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-            </a>
-          </div>
+          <div id="sec"><a href="https://cli.steffanjones.dev"><i class="fa fa-terminal fa-2x" aria-hidden="true"></i></a></div>
+          <div id="sec"><a href="https://github.com/steffandrosinos" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+          <div id="sec"><a href="https://www.linkedin.com/in/steffandrosinos/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></div>
+          <div id="sec"><a href="https://www.twitter.com/steffandrosinos" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
         </div>
       </div>
       <div id="about">
@@ -43,12 +30,33 @@
       <div id="projects">
         <txt>
         These are a few of my projects. Some of which are quite small.
-        </txt>
+        </txt><br>
+        <div id="languages">
+          <div id="lang"><i id="prog" class="devicon-java-plain"></i></div>
+          <div id="lang"><i id="prog" class="mdi mdi-language-python"></i></div>
+          <div id="lang_sml"><i id="prog" class="devicon-javascript-plain"></i></div>
+          <div id="lang_sml"><i id="prog" class="devicon-html5-plain"></i></div>
+          <div id="lang_sml"><i id="prog" class="devicon-css3-plain"></i></div>
+          <div id="lang_sml"><i id="prog" class="devicon-c-plain"></i></div>
+          <div id="lang_sml"><i id="prog" class="devicon-cplusplus-plain"></i></div>
+          <div id="lang"><i id="prog" class="mdi mdi-language-haskell"></i></div>
+        </div>
       </div>
       <div id="contact">
         <txt>
           Here are a few of my contacts.
         </txt>
+      </div>
+    </div>
+    <div id="footer">
+      Made by Steffan Jones.
+    </div>
+    <div id="arrows">
+      <div id="up_arrow">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </div>
+      <div id="down_arrow">
+        <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
       </div>
     </div>
   </body>

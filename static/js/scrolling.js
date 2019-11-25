@@ -1,12 +1,16 @@
+//start
+var scroll_val = 0;
+var sections = ["about", "projects", "contact"];
+var section_pointer = 0;
 var scrolling = false;
-$.fn.scrollView = function () {
-  return this.each(function () {
-    scrolling = true;
-    $('html, body').animate({
-      scrollTop: (($(this).offset()).top)-300
-    }, 500, function() {
-      scrolling = false;
-    });
+blurSections(section_pointer);
+
+function scrollToDiv(div) {
+  scrolling = true;
+  $('html, body').animate({
+    scrollTop: (($(div).offset()).top)-360
+  }, 500, function() {
+    scrolling = false;
   });
 }
 
@@ -21,34 +25,59 @@ function blurSections(section_pointer) {
   }
 }
 
-var scroll_val = 0;
-var sections = ["about", "projects", "contact"];
-var section_pointer = 0;
-blurSections(section_pointer);
+function scrollOnce(dir) {
+  if(dir == "up") {
+    section_pointer--;
+  } else if(dir == "down") {
+    section_pointer++;
+  }
+  var section = "#" + sections[section_pointer];
+  scrollToDiv(section);
+  blurSections(section_pointer);
+}
 
-$(window).scroll(function(){
-  var scroll = $(window).scrollTop();
-  if(scroll > scroll_val) {
-    //Scrolling down
-    if(!scrolling) {
-      if(section_pointer < (sections.length-1)) {
-        section_pointer++;
-        var section = "#" + sections[section_pointer];
-        $(section).scrollView();
-        blurSections(section_pointer);
-      }
-    }
-    scroll_val = scroll;
-  } else {
-    //Scrolling up
+$(document).ready(function() {
+
+  scrollToDiv("#about");
+
+  $("#up_arrow").click(function() {
     if(!scrolling) {
       if(section_pointer > 0) {
-        section_pointer--;
-        var section = "#" + sections[section_pointer];
-        $(section).scrollView();
-        blurSections(section_pointer);
+        scrollOnce("up");
       }
     }
-    scroll_val = scroll;
-  }
+  });
+  $("#down_arrow").click(function() {
+    if(!scrolling) {
+      if(section_pointer < sections.length-1) {
+        scrollOnce("down");
+      }
+    }
+  });
 });
+
+$(document).keydown(function (e) {
+  switch (e.keyCode) {
+    //Past commands
+    case 38: //up arrow
+      if(!scrolling) {
+        if(section_pointer > 0) {
+          scrollOnce("up");
+        }
+      }
+      break;
+
+    case 40: //down arrow
+      if(!scrolling) {
+        if(section_pointer < sections.length-1) {
+          scrollOnce("down");
+        }
+      }
+      break;
+
+    default:
+      //do nothing
+      break;
+  }
+
+})

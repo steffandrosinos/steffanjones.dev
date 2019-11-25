@@ -3,6 +3,7 @@
 body {
   background: #0a0a0e;
   overflow-x: hidden;
+  overflow-y: hidden;
   height: 100%;
   width: 100%;
   font-family: 'Muli', sans-serif;
@@ -58,6 +59,7 @@ a:link, a:visited, a:hover, a:active {
   left: 0;
   width: 372px;
   height: 65px;
+  left: -100px;
   font-weight: bolder;
   letter-spacing: 1.5px;
   font-size: 45px;
@@ -76,7 +78,7 @@ a:link, a:visited, a:hover, a:active {
   height: 42px;
   font-size: 30px;
   top: -51.25px;
-  left: 800px;
+  left: 900px;
   transition: .5s ease;
   display: flex;
   justify-content: space-between;
@@ -114,7 +116,7 @@ txt {
 }
 #about {
   position: relative;
-  top: 300px;
+  top: 360px;
   height: 450px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 50px;
@@ -134,11 +136,52 @@ txt {
 }
 #contact {
   position: relative;
-  top: 400px;
+  top: 300px;
   height: 675px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 50px;
   text-align: center;
   filter: blur(25px);
   transition: .5s ease;
+}
+#arrows {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  height: 20px;
+  margin: -30px -40px;
+}
+#down_arrow {
+  position: relative;
+  margin: -10px 0px;
+}
+#languages {
+  position: relative;
+  height: 60px;
+  width: 650px;
+  top: 150px;
+  left: 50%;
+  margin: 0px -325px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lang {
+  position: relative;
+  font-size: 70px;
+  height: 60px;
+  width: 60px;
+}
+#lang_sml {
+  position: relative;
+  top: 8px;
+  font-size: 59px;
+  height: 60px;
+  width: 60px;
+}
+#footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 925px;
 }
