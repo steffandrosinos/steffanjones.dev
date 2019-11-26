@@ -195,6 +195,8 @@ txt {
   text-align: center;
   top: 925px;
 }
+
+/* mobile scaling */
 @media only screen and (max-width: 1220px) {
   #main {
     position: relative;
@@ -207,8 +209,9 @@ txt {
     position: relative;
     top: -40px;
     left: 50%;
-    width: 410px;
-    margin: -0px -205px;
+    width: 500px;
+    text-align: center;
+    margin: -0px -250px;
     font-size: 50px;
   }
   #right_section {
@@ -226,5 +229,51 @@ txt {
   #sec {
     padding: 3px;
     font-size: 28px;
+  }
+  #about {
+    width: 80%;
+    margin: -0px 10%;
+    font-size: 35px;
+  }
+  #projects {
+    width: 80%;
+    margin: -0px 10%;
+    font-size: 35px;
+  }
+  #projects_lang {
+    width: 80%;
+    margin: -0px 10%;
+    font-size: 35px;
+  }
+  #contact {
+    width: 80%;
+    margin: -0px 10%;
+    font-size: 35px;
+  }
+  #languages {
+    width: 100%;
+    margin: -0px -50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #lang {
+    font-size: 50px;
+    height: 60px;
+    width: 60px;
+  }
+  #lang_sml {
+    position: relative;
+    top: 8px;
+    font-size: 40px;
+    height: 60px;
+    width: 60px;
+  }
+  #footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: null;
+    top: 96%;
   }
 }
