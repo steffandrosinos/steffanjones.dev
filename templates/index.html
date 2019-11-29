@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="{{url_for("static", filename="favicon.png")}}">
     <link rel="stylesheet" type="text/css" href="{{url_for("static", filename="css/style_index.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for("static", filename="css/style_languages.css")}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
     <script type="text/javascript" src="{{url_for("static", filename="js/jquery-3.4.1.min.js")}}"></script>
     <script type="text/javascript" src="{{url_for("static", filename="js/scrolling.js")}}"></script>
+    <script type="text/javascript" src="{{url_for("static", filename="js/languages.js")}}"></script>
   </body>
   </head>
   <body>
@@ -34,14 +36,25 @@
       <div id="projects_lang">
         <txt>Projects by programming language.</txt><br>
         <div id="languages">
-          <div id="lang"><a href="https://github.com/steffandrosinos/Breaking-Caesar" target="_blank"><i id="prog" class="devicon-java-plain"></i></a></div>
-          <div id="lang"><i id="prog" class="mdi mdi-language-python"></i></a></div>
-          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="prog" class="devicon-javascript-plain"></i></a></div>
-          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="prog" class="devicon-html5-plain"></i></a></div>
-          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="prog" class="devicon-css3-plain"></i></a></div>
-          <div id="lang_sml"><a href="https://github.com/steffandrosinos/GameOfLife/blob/master/GameOfLife.c" target="_blank"><i id="prog" class="devicon-c-plain"></i></a></div>
-          <div id="lang_sml"><a href="https://github.com/steffandrosinos/Learning-CPP" target="_blank"><i id="prog" class="devicon-cplusplus-plain"></i></a></div>
-          <div id="lang"><a href="https://github.com/steffandrosinos/Learning-Haskell" target="_blank"><i id="prog" class="mdi mdi-language-haskell"></i></a></div>
+          <div id="lang"><a href="https://github.com/steffandrosinos/Breaking-Caesar" target="_blank"><i id="logo_java" class="devicon-java-plain"></i></a></div>
+          <div id="lang"><i id="logo_python" class="mdi mdi-language-python"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="logo_js" class="devicon-javascript-plain"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="logo_html" class="devicon-html5-plain"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="logo_css" class="devicon-css3-plain"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/GameOfLife/blob/master/GameOfLife.c" target="_blank"><i id="logo_c" class="devicon-c-plain"></i></a></div>
+          <div id="lang_sml"><a href="https://github.com/steffandrosinos/Learning-CPP" target="_blank"><i id="logo_cpp" class="devicon-cplusplus-plain"></i></a></div>
+          <div id="lang"><a href="https://github.com/steffandrosinos/Learning-Haskell" target="_blank"><i id="logo_haskell" class="mdi mdi-language-haskell"></i></a></div>
+        </div>
+        <div id="languages_hover">
+          <div id="lang_java">Java</div>
+          <div id="lang_python">Python</div>
+          <div id="lang_js">JavaScript</div>
+          <div id="lang_html">HTML</div>
+          <div id="lang_css">CSS</div>
+          <div id="lang_c">C</div>
+          <div id="lang_cpp">C++</div>
+          <div id="lang_haskell">Haskell</div>
+
         </div>
       </div>
       <div id="contact">
