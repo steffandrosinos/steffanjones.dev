@@ -43,26 +43,17 @@ a:link, a:visited, a:hover, a:active {
 #main {
   position: relative;
   width: 1000px;
-  height: 100%;
+  height: 400px;
   left: 50%;
-  margin: 0 -500px;
+  top: 50%;
+  margin: -200px -500px;
 }
-#menu_top {
-  position: fixed;
-  width: 100%;
-  height: 65px;
-  top: 50px;
-  z-index: 1;
-}
-#logo {
+#name {
   position: relative;
-  left: 0;
-  width: 372px;
-  height: 65px;
-  left: -100px;
-  font-weight: bolder;
-  letter-spacing: 1.5px;
-  font-size: 45px;
+  font-size: 100px;
+  width: 742px;
+  left: 50%;
+  margin: -0px -371px;
   background: linear-gradient(90deg, #80ffdb, #a600ff);
   background-size: 200% 100%;
   -webkit-animation: anim 20s ease infinite;
@@ -72,22 +63,77 @@ a:link, a:visited, a:hover, a:active {
   -o-animation: anim 20s ease infinite;
   animation: anim 20s ease infinite;
 }
-#right_section {
-  position:relative;
-  width: 200px;
-  height: 42px;
+#features {
+  position: relative;
+  width: 600px;
+  height: 150px;
+  left: 50%;
+  margin: -0px -300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 30px;
-  top: -51.25px;
-  left: 900px;
-  transition: .5s ease;
+}
+#socials {
+  position: relative;
+  width: 400px;
+  left: 50%;
+  margin: -0px -200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #sec {
   padding: 3px;
-  width: 42px;
-  font-size: 20px;
+  width: 60px;
+  font-size: 30px;
+}
+#email {
+  position: relative;
+  top: -19px;
+  height: 0px;
+  margin: -13px 0px;
+}
+#email:hover {
+  color: #a600ff;
+}
+#email #emailTip {
+  visibility: hidden;
+  width: 220px;
+  height: 44px;
+  background: #555;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+  left: -83px;
+  top: -48px;
+  font-size: 16px;
+}
+#email #emailTip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+#email:hover #emailTip {
+  visibility: visible;
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+#email_val {
+  visibility: hidden;
+}
+cp {
+  color: #DDD;
 }
 i:hover {
   background: linear-gradient(90deg, #80ffdb, #a600ff);
@@ -99,157 +145,4 @@ i:hover {
   -o-animation: anim 5s ease infinite;
   animation: anim 5s ease infinite;
   transition: .5s ease;
-}
-cy {
-  background: linear-gradient(135deg, #80ffdb, #a600ff);
-  background-size: 200% 100%;
-  -webkit-animation: anim 20s ease infinite;
-  -moz-animation: anim 20s ease infinite;
-  -o-animation: anim 20s ease infinite;
-  animation: anim 20s ease infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-txt {
-  position: relative;
-  top: 30%;
-}
-#about {
-  position: relative;
-  top: 360px;
-  height: 450px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 50px;
-  text-align: center;
-  filter: blur(0px);
-  transition: .5s ease;
-}
-#projects {
-  position: relative;
-  top: 300px;
-  height: 450px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 50px;
-  text-align: center;
-  filter: blur(25px);
-  transition: .5s ease;
-}
-#projects_lang {
-  position: relative;
-  top: 200px;
-  height: 450px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 50px;
-  text-align: center;
-  filter: blur(25px);
-  transition: .5s ease;
-}
-#contact {
-  position: relative;
-  top: 100px;
-  height: 675px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 50px;
-  text-align: center;
-  filter: blur(25px);
-  transition: .5s ease;
-}
-#arrows {
-  position: fixed;
-  top: 50%;
-  left: 100%;
-  height: 20px;
-  margin: -30px -40px;
-}
-#down_arrow {
-  position: relative;
-  margin: -10px 0px;
-}
-#footer {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  top: 925px;
-}
-
-/* mobile scaling */
-@media only screen and (max-width: 1220px) {
-  #main {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    margin: 0 -50%;
-  }
-  #logo {
-    position: relative;
-    top: -40px;
-    left: 50%;
-    width: 500px;
-    text-align: center;
-    margin: -0px -250px;
-    font-size: 50px;
-  }
-  #right_section {
-    position:relative;
-    width: 275px;
-    height: 20px;
-    top: -10px;
-    left: 50%;
-    margin: -0px -137.5px;
-    transition: .5s ease;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #sec {
-    padding: 3px;
-    font-size: 28px;
-  }
-  #about {
-    width: 80%;
-    margin: -0px 10%;
-    font-size: 35px;
-  }
-  #projects {
-    width: 80%;
-    margin: -0px 10%;
-    font-size: 35px;
-  }
-  #projects_lang {
-    width: 80%;
-    margin: -0px 10%;
-    font-size: 35px;
-  }
-  #contact {
-    width: 80%;
-    margin: -0px 10%;
-    font-size: 35px;
-  }
-  #languages {
-    width: 100%;
-    margin: -0px -50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #lang {
-    font-size: 50px;
-    height: 60px;
-    width: 60px;
-  }
-  #lang_sml {
-    position: relative;
-    top: 8px;
-    font-size: 40px;
-    height: 60px;
-    width: 60px;
-  }
-  #footer {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    top: null;
-    top: 96%;
-  }
 }
