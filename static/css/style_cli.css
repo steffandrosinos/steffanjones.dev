@@ -38,14 +38,27 @@ a:link, a:visited, a:hover, a:active {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
 }
+#home {
+  position: relative;
+  font-size: 16px;
+  top: 38px;
+  left: 18px;
+}
+i {
+  color: #404060;
+  transition: 0.5s ease;
+}
+i:hover {
+  color: #a600ff;
+  transition: 0.5s ease;
+}
 #main {
   position: relative;
   height: 100%;
   width: 94%;
-  top: 10px;
+  top: -30px;
   left: 75px;
   margin: -4px;
-
 }
 #seperator {
   position: fixed;
