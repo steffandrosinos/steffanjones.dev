@@ -72,17 +72,7 @@ a:link, a:visited, a:hover, a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 35px;
-}
-#feat {
-  position: relative;
-  width: 200px;
-  text-align: center;
-  transition: .5s ease;
-}
-#feat:hover {
-  color: #a600ff;
-  transition: .5s ease;
+  font-size: 30px;
 }
 #socials {
   position: relative;
@@ -155,4 +145,60 @@ i:hover {
   -o-animation: anim 5s ease infinite;
   animation: anim 5s ease infinite;
   transition: .5s ease;
+}
+
+@media screen and (max-width: 750px) {
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  #main {
+    position: relative;
+    height: 450px;
+    left: 0px;
+    top: 50%;
+    margin: -225px -0px;
+    width: 100%;
+  }
+  #name {
+    position: relative;
+    font-size: 45px;
+    width: 334px;
+    left: 50%;
+    margin: -0px -177px;
+  }
+  #features {
+    position: relative;
+    width: 152px;
+    height: 150px;
+    left: 50%;
+    margin: -0px -82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #sec {
+    padding: 3px;
+    width: 40px;
+    font-size: 20px;
+  }
+  #socials {
+    position: relative;
+    width: 300px;
+    left: 50%;
+    margin: -0px -157px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #email {
+    position: relative;
+    top: -9px;
+    height: 0px;
+    margin: -13px 0px;
+  }
 }
