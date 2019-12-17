@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
-body {
-  background: #0a0a0e;
+html, body {
   overflow-x: hidden;
   overflow-y: hidden;
+}
+body {
+  position: relative;
+  background: #0a0a0e;
   height: 100%;
   width: 100%;
   font-family: 'Muli', sans-serif;
@@ -73,6 +76,18 @@ a:link, a:visited, a:hover, a:active {
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
+}
+#feat {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  left: -10px;
+  color: #FFFFFF;
+  transition: 0.5s ease;
+}
+#feat:hover {
+  color: #a600ff;
+  transition: 0.5s ease;
 }
 #socials {
   position: relative;
@@ -147,7 +162,7 @@ i:hover {
   transition: .5s ease;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   body{
     width: 100%;
     height: 100%;
@@ -162,10 +177,10 @@ i:hover {
   }
   #name {
     position: relative;
-    font-size: 45px;
-    width: 334px;
-    left: 50%;
-    margin: -0px -177px;
+    font-size: 13vw;
+    width: 100%;
+    left: 0%;
+    margin: 0px 0px;
   }
   #features {
     position: relative;
@@ -178,8 +193,8 @@ i:hover {
     justify-content: space-between;
     align-items: center;
     font-size: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
   #sec {
     padding: 3px;
