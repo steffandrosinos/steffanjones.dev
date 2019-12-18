@@ -10,14 +10,19 @@ def handle_404(e):
 # non-www traffic
 @app.route('/')
 def non_www_index():
-    return redirect("https://cli.steffanjones.dev", code=302)
+    return redirect("https://www.steffanjones.dev", code=302)
+
+# cli traffic
+@app.route('/', subdomain="cli")
+def cli():
+    return render_template("cli.html")
 
 # www traffic
 @app.route('/', subdomain="www")
 def index():
     return render_template("index.html")
 
-# cli traffic
-@app.route('/', subdomain="cli")
-def cli():
-    return render_template("cli.html")
+# www traffic
+@app.route('/cv/', subdomain="www")
+def cv():
+    return render_template("cv.html")
