@@ -14,7 +14,7 @@ body {
 	font-size: 20px;
 	color: white;
 }
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited, a:active {
  color:#ffffff;
  text-decoration:none
 }
@@ -79,13 +79,15 @@ a:link, a:visited, a:hover, a:active {
 }
 #feat {
   position: relative;
-  width: 200px;
+  width: auto;
   text-align: center;
   left: -10px;
+}
+hov {
   color: #FFFFFF;
   transition: 0.5s ease;
 }
-#feat:hover {
+hov:hover {
   color: #a600ff;
   transition: 0.5s ease;
 }

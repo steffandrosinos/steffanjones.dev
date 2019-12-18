@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+body {
+  position: relative;
+  background: #0a0a0e;
+  height: 100%;
+  width: 100%;
+  font-family: 'Merriweather', serif;
+  text-align: left;
+	font-size: 20px;
+	color: #3E3D3F;
+}
+#main {
+  position: relative;
+  height: 2000px;
+  width: 1200px;
+  left: 50%;
+  margin: -8px -600px;
+  background: white;
+}
+#title {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+#name {
+  position: relative;
+  font-size: 28px;
+  width: 314px;
+  top: 50px;
+  left: 50%;
+  margin: -0px -157px;
+}
+#title_icons1 {
+  position: relative;
+  left: 50%;
+  width: 645px;
+  height: 28px;
+  margin: 60px -322.5px;
+}
+#location {
+  position: relative;
+  font-size: 16px;
+}
+#i_location {
+  position: relative;
+  top: 1px;
+  font-size: 22px;
+}
+#email {
+  position: relative;
+  font-size: 16px;
+  top: -21px;
+  left: 250px;
+}
+#i_email {
+  position: relative;
+  top: 1px;
+  font-size: 20px;
+}
+#phone {
+  position: relative;
+  font-size: 16px;
+  top: -47px;
+  left: 493px;
+}
+#i_phone {
+  position: relative;
+  top: 4px;
+  font-size: 24px;
+}
+#title_icons2 {
+  position: relative;
+  left: 50%;
+  width: 396px;
+  height: 28px;
+  margin: -65px -198px;
+}
+#linkedin {
+  position: relative;
+  font-size: 16px;
+}
+#i_linkedin {
+  position: relative;
+  top: 2px;
+  font-size: 22px;
+}
+#website {
+  position: relative;
+  font-size: 16px;
+  top: -23px;
+  left: 186px;
+}
+#i_website {
+  position: relative;
+  top: 1px;
+  font-size: 22px;
+}
+#seperator {
+  position: relative;
+  height: 30px;
+  width: 90%;
+  left: 5%;
+}
+#fill {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  top: 49%;
+  background-color: #3E3D3F;
+}
