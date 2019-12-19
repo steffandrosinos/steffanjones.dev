@@ -7,7 +7,7 @@ body {
   position: relative;
   background: #0A0A0E;
   overflow-x: hidden;
-  height: 100%;
+  height: 101%;
   width: 100%;
   margin: -0px -0px;
   font-family: 'Merriweather', serif;
@@ -17,11 +17,29 @@ body {
 }
 #main {
   position: relative;
-  height: 2000px;
+  height: 1630px;
   width: 1180px;
   left: 50%;
   margin: -8px -590px;
   background: white;
+}
+#download {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+a:link, a:visited, a:active {
+ color:#ffffff;
+ text-decoration:none
+}
+#i_download {
+  color: white;
+  transition: 0.5s ease;
+  font-size: 2vw;
+}
+#i_download:hover {
+  color: #a600ff;
+  transition: 0.5s ease;
 }
 #margin {
   position: relative;
@@ -119,7 +137,7 @@ h1 {
 }
 #fill {
   position: relative;
-  background: #3E3D3F;
+  background: #a6a6a6;
   height: 2px;
   width: 100%;
   top: 49%;
@@ -167,6 +185,10 @@ point2 {
   position: relative;
   top: -25px;
 }
+#university {
+  position: relative;
+  height: 390px;
+}
 uni_date {
   position: relative;
   font-size: 20px;
@@ -190,17 +212,87 @@ uni_name {
 }
 #uni_note {
   position: relative;
+  top: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 18px;
+}
+#college {
+  position: relative;
+  height: 180px;
+  font-size: 18px;
+}
+#college_points {
+  position: relative;
+  line-height: 18px;
+  left: 60px;
+  top: 8px;
+}
+#school {
+  position: relative;
+  height: 80px;
+  font-size: 18px;
+}
+#school_info {
+  position: relative;
+  line-height: 18px;
+  left: 60px;
+  top: 8px;
+}
+#experience {
+  position: relative;
+  top: -25px;
+}
+exp_date {
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+}
+exp_type {
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  left: 70px;
+}
+exp_role {
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  left: 140px;
+}
+exp_company {
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  left: 210px;
+}
+#exp_info {
+  position: relative;
+  height: 100px;
   top: 10px;
   text-align: justify;
   text-justify: inter-word;
   font-size: 18px;
 }
+
+@media screen and (max-width: 1250px) {
+  #i_download {
+    color: #3E3D3F;
+    transition: 0.5s ease;
+    font-size: 4vw;
+  }
+  #i_download:hover {
+    color: #a600ff;
+    transition: 0.5s ease;
+  }
+}
+
 @media screen and (max-width: 1180px) {
   body {
     width: 1180px;
     height: 100%;
     overflow-x: hidden;
-    font-size: 4vw;
+    font-size: 18px;
   }
   #main {
     position: relative;
