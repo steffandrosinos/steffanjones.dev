@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+html {
+  overflow: hidden;
+  height: 100%;
+}
 body {
   position: relative;
-  background: #0a0a0e;
+  background: #0A0A0E;
+  overflow-x: hidden;
   height: 100%;
   width: 100%;
+  margin: -0px -0px;
   font-family: 'Merriweather', serif;
   text-align: left;
 	font-size: 20px;
@@ -14,7 +20,7 @@ body {
   height: 2000px;
   width: 1180px;
   left: 50%;
-  margin: -8px -600px;
+  margin: -8px -590px;
   background: white;
 }
 #margin {
@@ -36,7 +42,7 @@ h1 {
   position: relative;
   font-size: 28px;
   font-weight: bold;
-  width: 324px;
+  width: 350px;
   top: 50px;
   left: 50%;
   margin: -0px -162px;
@@ -188,4 +194,20 @@ uni_name {
   text-align: justify;
   text-justify: inter-word;
   font-size: 18px;
+}
+@media screen and (max-width: 1180px) {
+  body {
+    width: 1180px;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 4vw;
+  }
+  #main {
+    position: relative;
+    height: 200%;
+    width: 100%;
+    left: 0%;
+    margin: -8px -0px;
+    background: white;
+  }
 }

@@ -22,7 +22,14 @@ def cli():
 def index():
     return render_template("index.html")
 
-# www traffic
 @app.route('/cv/', subdomain="www")
 def cv():
     return render_template("cv.html")
+
+# CV redirects
+@app.route('/cv/')
+def index_cv():
+    return redirect("https://www.steffanjones.dev/cv/", code=302)
+@app.route('/cv/', subdomain="cli")
+def cli_cv():
+    return redirect("https://www.steffanjones.dev/cv/", code=302)
