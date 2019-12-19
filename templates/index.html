@@ -10,18 +10,17 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
     <script type="text/javascript" src="{{url_for("static", filename="js/jquery-3.4.1.min.js")}}"></script>
-    <script type="text/javascript" src="{{url_for("static", filename="js/scaling.js")}}"></script>
-    <!--<script type="text/javascript" src="{{url_for("static", filename="js/features.js")}}"></script>-->
+    <script type="text/javascript" src="{{url_for("static", filename="js/features.js")}}"></script>
     <script type="text/javascript" src="{{url_for("static", filename="js/email.js")}}"></script>
+    <script type="text/javascript" src="{{url_for("static", filename="js/languages.js")}}"></script>
   </head>
   <body>
     <div id="main" class="noselect">
       <div id="name">&lt;steffan jones/&gt;</title></div>
       <div id="features">
-        <div id="feat"><hov>About</hov></div>
-        <div id="feat"><hov>Projects</hov></div>
-        <div id="feat"><hov>Languages</hov></div>
-        <div id="feat"><a href="https://www.steffanjones.dev/cv/" target="_blank"><hov>CV</hov></a></div>
+        <div id="about"><hov>About</hov></div>
+        <div id="feat_lang"><hov>Languages</hov></div>
+        <div id="cv"><a href="https://www.steffanjones.dev/cv/" target="_blank"><hov>CV</hov></a></div>
       </div>
       <div id="socials">
         <div id="sec"><a href="https://github.com/steffandrosinos" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
@@ -29,6 +28,46 @@
         <div id="sec"><a href="https://www.twitter.com/steffandrosinos" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
         <div id="sec"><div id='email'><i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span id='emailTip'></span><div id="email_val">steffan@steffanjones.dev</div></div></div>
         <div id="sec"><a href="https://cli.steffanjones.dev"><i class="fa fa-terminal fa-2x" aria-hidden="true"></i></a></div>
+      </div>
+      <div id="about_content">
+        Hello, my name is <cy>Steffan Jones</cy> and I'm currently in my final year studying Computer Science at the <cy><a href="https://www.liverpool.ac.uk/study/undergraduate/courses/computer-science-bsc-hons/overview/" target="_blank">University of Liverpool</a></cy>. I'll be looking for work placement when I've finished this year so if you're hiring, send me an email! I'm mainly looking for junior programming work in any language with a reputable company.
+      </div>
+      <div id="languages_content">
+        Here are some programming languages I've used.
+        <div id="languages">
+          <div id="lang">
+            <a href="https://github.com/steffandrosinos/Breaking-Caesar" target="_blank"><i id="logo_java" class="devicon-java-plain"></i></a>
+            <div id="lang_java">Java</div>
+          </div>
+          <div id="lang">
+            <i id="logo_python" class="mdi mdi-language-python"></i></a>
+            <div id="lang_python">Python</div>
+          </div>
+          <div id="lang_sml">
+            <a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="logo_js" class="devicon-javascript-plain"></i></a>
+            <div id="lang_js">JavaScript</div>
+          </div>
+          <div id="lang_sml">
+            <a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="logo_html" class="devicon-html5-plain"></i></a>
+            <div id="lang_html">HTML</div>
+          </div>
+          <div id="lang_sml">
+            <a href="https://github.com/steffandrosinos/steffanjones.dev" target="_blank"><i id="logo_css" class="devicon-css3-plain"></i></a>
+            <div id="lang_css">CSS</div>
+          </div>
+          <div id="lang_sml">
+            <a href="https://github.com/steffandrosinos/GameOfLife/blob/master/GameOfLife.c" target="_blank"><i id="logo_c" class="devicon-c-plain"></i></a>
+            <div id="lang_c">C</div>
+          </div>
+          <div id="lang_sml">
+            <a href="https://github.com/steffandrosinos/Learning-CPP" target="_blank"><i id="logo_cpp" class="devicon-cplusplus-plain"></i></a>
+            <div id="lang_cpp">C++</div>
+          </div>
+          <div id="lang">
+            <a href="https://github.com/steffandrosinos/Learning-Haskell" target="_blank"><i id="logo_haskell" class="mdi mdi-language-haskell"></i></a>
+            <div id="lang_haskell">Haskell</div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -48,8 +48,8 @@ a:link, a:visited, a:active {
   width: 1000px;
   height: 400px;
   left: 50%;
-  top: 50%;
   margin: -200px -500px;
+  transition: 0.5s ease;
 }
 #name {
   position: relative;
@@ -68,20 +68,32 @@ a:link, a:visited, a:active {
 }
 #features {
   position: relative;
-  width: 600px;
+  width: 500px;
   height: 150px;
   left: 50%;
-  margin: -0px -300px;
+  margin: -0px -250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
 }
-#feat {
+#about {
   position: relative;
   width: auto;
   text-align: center;
-  left: -10px;
+  left: 0px;
+}
+#feat_lang {
+  position: relative;
+  width: auto;
+  text-align: center;
+  left: 0px;
+}
+#cv {
+  position: relative;
+  width:25px;
+  text-align: center;
+  left: -6px;
 }
 hov {
   color: #FFFFFF;
@@ -90,6 +102,16 @@ hov {
 hov:hover {
   color: #a600ff;
   transition: 0.5s ease;
+}
+cy {
+  background: linear-gradient(135deg, #80ffdb, #a600ff);
+  background-size: 200% 100%;
+  -webkit-animation: anim 20s ease infinite;
+  -moz-animation: anim 20s ease infinite;
+  -o-animation: anim 20s ease infinite;
+  animation: anim 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #socials {
   position: relative;
@@ -163,8 +185,32 @@ i:hover {
   animation: anim 5s ease infinite;
   transition: .5s ease;
 }
+#about_content {
+  position: fixed;
+  width: 1000px;
+  font-size: 30px;
+  text-align: center;
+  top: 50vh;
+  transition: 0.5s ease;
+  filter: blur(25px);
+  visibility: hidden;
+}
+#languages_content {
+  position: fixed;
+  font-size: 30px;
+  text-align: center;
+  top: 50%;
+  width: 1000px;
+  transition: 0.5s ease;
+  filter: blur(25px);
+  visibility: hidden;
+}
 
-@media screen and (max-width: 768px) {
+.position {
+  top: 50%;
+}
+
+@media screen and (max-width: 1000px) {
   body{
     width: 100%;
     height: 100%;
@@ -173,7 +219,6 @@ i:hover {
     position: relative;
     height: 450px;
     left: 0px;
-    top: 50%;
     margin: -225px -0px;
     width: 100%;
   }
@@ -198,6 +243,15 @@ i:hover {
     padding-top: 20px;
     padding-bottom: 30px;
   }
+  #about {
+    top: -15px;
+  }
+  #feat_lang {
+    top: -30px;
+  }
+  #cv {
+    top: -45px;
+  }
   #sec {
     padding: 3px;
     width: 40px;
@@ -207,7 +261,7 @@ i:hover {
     position: relative;
     width: 300px;
     left: 50%;
-    margin: -0px -157px;
+    margin: -75px -153px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,4 +272,25 @@ i:hover {
     height: 0px;
     margin: -13px 0px;
   }
+  #about_content {
+    position: fixed;
+    width: 90%;
+    left: 5%;
+    font-size: 5vw;
+    text-align: center;
+    top: 42vh;
+    transition: 0.5s ease;
+  }
+
+  #languages_content {
+    font-size: 5vw;
+    text-align: center;
+    top: 45%;
+    width: 90%;
+    left: 5%;
+    transition: 0.5s ease;
+    filter: blur(25px);
+    visibility: hidden;
+  }
+
 }

@@ -2,7 +2,7 @@
   position: relative;
   height: 60px;
   width: 650px;
-  top: 150px;
+  top: 10px;
   left: 50%;
   margin: 0px -325px;
   display: flex;
@@ -24,7 +24,7 @@
 }
 #languages_hover {
   position: relative;
-  top: 160px;
+  top: 20px;
   font-size: 30px;
   color: #888;
   display: flex;
@@ -33,41 +33,134 @@
 }
 #lang_java {
   position: relative;
-  left: 178px;
+  left: 5px;
+  font-size: 30px;
   visibility: hidden;
 }
 #lang_python {
   position: relative;
-  left: 127px;
+  left: -13px;
+  font-size: 30px;
   visibility: hidden;
 }
 #lang_js {
   position: relative;
-  left: 30px;
+  left: -40px;
+  font-size: 30px;
   visibility: hidden;
 }
 #lang_html {
   position: relative;
-  left: -50px;
+  left: -8px;
+  font-size: 30px;
   visibility: hidden;
 }
 #lang_css {
   position: relative;
-  left: -91px;
+  left: -1px;
+  font-size: 30px;
   visibility: hidden;
 }
 #lang_c {
   position: relative;
-  left: -99px;
+  left: -1px;
+  font-size: 30px;
   visibility: hidden;
 }
 #lang_cpp {
   position: relative;
-  left: -107px;
+  left: 1px;
+  font-size: 30px;
   visibility: hidden;
 }
 #lang_haskell {
   position: relative;
-  left: -153px;
+  left: -15px;
+  font-size: 30px;
   visibility: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+
+  #languages {
+    position: relative;
+    height: 120px;
+    width: 100%;
+    top: 10px;
+    left: 0%;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+
+  #lang {
+    position: relative;
+    font-size: 70px;
+    height: 120px;
+    width: 80px;
+  }
+  #lang_sml {
+    position: relative;
+    top: 10px;
+    font-size: 60px;
+    height: 120px;
+    width: 80px;
+  }
+
+  #lang_java {
+    position: relative;
+    left: 0px;
+    font-size: 20px;
+    visibility: hidden;
+  }
+  #lang_python {
+    position: relative;
+    left: 0px;
+    font-size: 20px;
+    visibility: hidden;
+  }
+  #lang_js {
+    position: relative;
+    left: -7px;
+    top: 1px;
+    font-size: 20px;
+    visibility: hidden;
+  }
+  #lang_html {
+    position: relative;
+    left: 2px;
+    top: 1px;
+    font-size: 20px;
+    visibility: hidden;
+  }
+  #lang_css {
+    position: relative;
+    left: 0px;
+    top: 1px;
+    font-size: 20px;
+    visibility: hidden;
+  }
+  #lang_c {
+    position: relative;
+    left: -0.5px;
+    top: 1px;
+    font-size: 20px;
+    visibility: hidden;
+  }
+  #lang_cpp {
+    position: relative;
+    left: 1px;
+    top: 1px;
+    font-size: 20px;
+    visibility: hidden;
+  }
+  #lang_haskell {
+    position: relative;
+    left: -2px;
+    font-size: 20px;
+    visibility: hidden;
+  }
+
 }
