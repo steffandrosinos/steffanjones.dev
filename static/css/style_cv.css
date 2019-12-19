@@ -12,10 +12,20 @@ body {
 #main {
   position: relative;
   height: 2000px;
-  width: 1200px;
+  width: 1180px;
   left: 50%;
   margin: -8px -600px;
   background: white;
+}
+#margin {
+  position: relative;
+  width: 90%;
+  left: 5%;
+}
+h1 {
+  position: relative;
+  top: 7px;
+  font-size: 24px;
 }
 #title {
   position: relative;
@@ -25,10 +35,11 @@ body {
 #name {
   position: relative;
   font-size: 28px;
-  width: 314px;
+  font-weight: bold;
+  width: 324px;
   top: 50px;
   left: 50%;
-  margin: -0px -157px;
+  margin: -0px -162px;
 }
 #title_icons1 {
   position: relative;
@@ -97,14 +108,84 @@ body {
 }
 #seperator {
   position: relative;
-  height: 30px;
-  width: 90%;
-  left: 5%;
+  height: 40px;
+  width: 100%%;
 }
 #fill {
   position: relative;
-  width: 100%;
+  background: #3E3D3F;
   height: 2px;
+  width: 100%;
   top: 49%;
-  background-color: #3E3D3F;
+}
+#summary {
+  position: relative;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+  height: 115px;
+  top: -25px;
+}
+#skills {
+  position: relative;
+  top: -25px;
+  height: 245px;
+}
+#bullets {
+  position: relative;
+  font-size: 18px;
+  line-height: 18px;
+  left: 60px;
+}
+#bullets2 {
+  position: relative;
+  font-size: 18px;
+  line-height: 16px;
+  left: 75px;
+}
+point {
+  position: relative;
+  font-weight: bold;
+  left: -25px;
+  top: 5px;
+  font-size: 28px;
+}
+point2 {
+  position: relative;
+  font-weight: bold;
+  left: -26px;
+  top: -2px;
+  line-height: 22px;
+}
+#education {
+  position: relative;
+  top: -25px;
+}
+uni_date {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+}
+uni_course {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  left: 70px;
+}
+uni_name {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  left: 140px;
+}
+#uni_rel {
+  line-height: 44px;
+  font-size: 18px;
+}
+#uni_note {
+  position: relative;
+  top: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 18px;
 }
