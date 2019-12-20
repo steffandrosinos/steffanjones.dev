@@ -25,12 +25,16 @@ function setLangVis(bool) {
 
 function setVisible(bool_lang, bool_about) {
 
+  var width = $(window).width();
+
   if(bool_lang) {
     $("#languages_content").css("filter", "blur(0px)");
     $("#languages_content").removeClass("hidden");
     $("#languages_content").addClass("visible");
   } else {
-    $("#languages_content").css("filter", "blur(5px)");
+    if(width > 1000) {
+      $("#languages_content").css("filter", "blur(25px)");
+    }
     $("#languages_content").removeClass("visible");
     $("#languages_content").addClass("hidden");
   }
@@ -40,7 +44,9 @@ function setVisible(bool_lang, bool_about) {
     $("#about_content").removeClass("hidden");
     $("#about_content").addClass("visible");
   } else {
-    $("#about_content").css("filter", "blur(5px)");
+    if(width > 1000) {
+      $("#about_content").css("filter", "blur(25px)");
+    }
     $("#about_content").removeClass("visible");
     $("#about_content").addClass("hidden");
   }
@@ -50,7 +56,6 @@ function setVisible(bool_lang, bool_about) {
 $(function() {
 
   $("#main").addClass("position");
-  setVisible(false, false);
   setLangVis(false);
 
   var position = false;
@@ -69,7 +74,6 @@ $(function() {
         position = false;
       } else {
         //HTML stuff
-        $("#languages_content").css("filter", "blur(5px)");
         setVisible(false, true);
         setLangVis(false);
         about_pressed = true;
@@ -83,7 +87,6 @@ $(function() {
         $(".position").css("top", (($(window).height())/10) + 200);
       }
       setVisible(false, true);
-      $("#about_content").css("filter", "blur(0px)");
       about_pressed = true;
       position = true;
     }
@@ -102,7 +105,6 @@ $(function() {
         position = false;
       } else {
         //HTML stuff
-        $("#about_content").css("filter", "blur(5px)");
         setVisible(true, false);
         setLangVis(true);
         languages_pressed = true;
